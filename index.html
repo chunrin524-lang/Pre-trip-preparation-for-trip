@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f4f0ec">
+<title>旅行前，先認識彼此｜旅伴事前調查表</title>
+<style>
+:root{--bg:#f5f1ed;--paper:#fffdfa;--ink:#383431;--muted:#8c817b;--line:#e7ddd6;--lav:#b7a4b8;--lav-dark:#77647a;--rose:#d7b9ad;--soft:#f2eaf1;--green:#718878}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC",sans-serif;line-height:1.65}
+.wrap{max-width:850px;margin:auto;padding:26px 16px 60px}.hero{padding:34px 25px 28px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(135deg,#fffdfa 10%,#f0e9f0 100%);text-align:center}
+.eyebrow{font-size:12px;letter-spacing:.2em;color:var(--lav-dark)}h1{font-size:clamp(27px,6vw,40px);font-weight:600;letter-spacing:.06em;margin:8px 0}.subtitle{font-size:14px;color:var(--muted);max-width:550px;margin:0 auto}
+.notice{margin:18px auto 0;max-width:620px;padding:12px 15px;border-radius:13px;background:#ffffffa8;color:#716761;font-size:13px}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:18px;box-shadow:0 5px 20px #49352b08}
+h2{font-size:19px;font-weight:600;margin:0 0 5px}.section-desc{font-size:13px;color:var(--muted);margin:0 0 17px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.field label{display:block;font-size:13px;color:#6f625c;margin-bottom:5px}.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:10px;padding:11px 12px;background:#fff;color:var(--ink);font:inherit;font-size:14px;outline:none}.field input:focus,.field textarea:focus{border-color:var(--lav)}
+.progressbox{position:sticky;top:0;z-index:5;background:#f5f1edeb;backdrop-filter:blur(10px);padding:12px 2px 10px;margin:14px 0 2px}.progressrow{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-bottom:7px}.bar{height:7px;background:#e7dfdc;border-radius:9px;overflow:hidden}.fill{height:100%;width:0;background:linear-gradient(90deg,#b9a6ba,#d6b8aa);transition:width .2s}
+.section{margin-top:20px}.section-head{display:flex;align-items:center;gap:10px;margin:0 0 12px}.section-no{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--soft);color:var(--lav-dark);font-size:12px}.section-head h2{margin:0}.qcard{background:var(--paper);border:1px solid var(--line);border-radius:15px;padding:16px 16px 13px;margin:10px 0}.qtop{display:flex;gap:10px;align-items:flex-start}.num{flex:none;color:var(--lav-dark);font-size:13px;font-weight:600;padding-top:1px}.question{font-size:15px;font-weight:500;flex:1}.choices{display:flex;gap:8px;flex-wrap:wrap;margin:13px 0 8px 29px}.choice{position:relative}.choice input{position:absolute;opacity:0}.choice span{display:inline-block;border:1px solid var(--line);border-radius:20px;padding:5px 14px;font-size:13px;color:#756a65;background:white;cursor:pointer}.choice input:checked+span{background:var(--soft);border-color:var(--lav);color:var(--lav-dark);font-weight:600}.note{margin-left:29px}.note input{width:100%;border:0;border-bottom:1px dashed #ded4ce;padding:7px 2px;background:transparent;font:inherit;font-size:12px;outline:none}.note input::placeholder{color:#b0a59e}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.btn{border:0;border-radius:12px;padding:12px 17px;font:inherit;font-size:14px;cursor:pointer}.primary{background:var(--lav-dark);color:white}.secondary{background:#eee7e3;color:#625751}.ghost{background:transparent;border:1px solid var(--line);color:#766a64}
+.summary{display:none}.summary.show{display:block}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:14px 0}.stat{background:#f6f0f4;border-radius:12px;padding:12px;text-align:center}.stat b{display:block;font-size:23px;color:var(--lav-dark)}.stat span{font-size:12px;color:var(--muted)}.summary-list{font-size:13px;color:#625751;white-space:pre-wrap;background:#faf7f4;border-radius:12px;padding:14px;max-height:420px;overflow:auto}
+.footer{text-align:center;font-size:12px;color:#a0948d;margin:25px 0 0}
+@media(max-width:560px){.wrap{padding:15px 12px 40px}.hero{padding:27px 17px}.panel{padding:17px}.grid{grid-template-columns:1fr}.qcard{padding:14px 12px}.choices,.note{margin-left:27px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+<div class="eyebrow">TRAVEL TOGETHER · BEFORE WE GO</div>
+<h1>旅行前，先認識彼此</h1>
+<p class="subtitle">一趟舒服的旅行，不一定要有完全相同的喜好；重要的是先知道彼此在意什麼，再一起找到適合大家的節奏。</p>
+<div class="notice">這份調查不是考試，也不是不能違反的契約。請依照真實想法作答；「看情況」和補充說明也都是很好的答案。</div>
+</header>
+
+<section class="panel">
+<h2>這次旅行的小檔案</h2><p class="section-desc">先填寫基本資訊，方便每次出遊重新使用。</p>
+<div class="grid">
+<div class="field"><label>旅行名稱</label><input id="tripName" placeholder="例如：東京自由行"></div>
+<div class="field"><label>目的地</label><input id="destination" placeholder="例如：日本東京"></div>
+<div class="field"><label>旅行日期</label><input id="dates" placeholder="例如：12/6－12/10"></div>
+<div class="field"><label>填寫者暱稱</label><input id="traveler" placeholder="讓旅伴知道這份回答是誰的"></div>
+</div>
+</section>
+
+<div class="progressbox"><div class="progressrow"><span>填寫進度</span><span id="progressText">已回答 0 / 32 題</span></div><div class="bar"><div class="fill" id="progressFill"></div></div></div>
+<div id="questions"></div>
+
+<section class="panel">
+<h2>最後，留一點空間給自己</h2><p class="section-desc">有些事情不一定能用 O 或 X 表達，可以在這裡補充。</p>
+<div class="field"><label>這趟旅行最期待的事情是？</label><textarea id="hope" rows="3" placeholder="想去的地方、想吃的東西，或只是想好好放鬆……"></textarea></div>
+<div class="field" style="margin-top:13px"><label>有沒有希望旅伴事先知道、但前面沒有問到的事？</label><textarea id="extra" rows="3" placeholder="任何生活習慣、需求或小提醒都可以寫在這裡。"></textarea></div>
+<div class="field" style="margin-top:13px"><label>如果旅行中意見不同，你希望我們怎麼溝通？</label><textarea id="communication" rows="3" placeholder="例如：先聽彼此的想法、輪流選擇、保留彈性……"></textarea></div>
+</section>
+
+<div class="actions">
+<button class="btn primary" onclick="makeSummary()">整理我的回答</button>
+<button class="btn secondary" onclick="downloadData()">下載回答檔</button>
+<button class="btn ghost" onclick="window.print()">列印／另存 PDF</button>
+<button class="btn ghost" onclick="clearAll()">清除重填</button>
+</div>
+<section class="panel summary" id="summary">
+<h2>你的旅伴偏好摘要</h2><p class="section-desc">可以先檢查內容，再複製或下載，傳給同行旅伴一起討論。</p>
+<div class="stats"><div class="stat"><b id="yesCount">0</b><span>符合／可以</span></div><div class="stat"><b id="noCount">0</b><span>不符合／不太行</span></div><div class="stat"><b id="maybeCount">0</b><span>看情況</span></div></div>
+<div class="summary-list" id="summaryText"></div>
+<div class="actions"><button class="btn primary" onclick="copySummary()">複製摘要</button></div>
+</section>
+<p class="footer">你的回答只保存在目前使用的瀏覽器，不會自動傳送給其他人。分享前，請自行下載或複製回答內容。<br>願每一次同行，都能保留自己的步調，也照顧彼此的感受。 ♡</p>
+</div>
+<script>
+const groups=[
+["01","旅行節奏與行程",[
+"機票、飯店是否都以最低價格為優先？",
+"可以接受早上 7 點左右起床嗎？（平常最晚通常幾點起床，也可以補充在下方）",
+"雙人房可以接受一張雙人床嗎？",
+"你有晚睡的習慣嗎？",
+"進飯店房間後，可以接受在浴室外更換衣物嗎？",
+"睡覺時會打呼、搶被子，或有其他可能影響同房者的習慣嗎？",
+"有沒有需要旅伴留意的慢性病、過敏或身體狀況？",
+"睡覺時可以接受冷氣設定在 26°C 以下嗎？",
+"行程可以因天氣、體力或突發狀況臨時調整嗎？",
+"可以各自去想逛的地方，再約定時間與地點會合嗎？"
+]],
+["02","景點、拍照與步行",[
+"每個景點都會想拍照留念嗎？",
+"吃東西前會想先拍食物照片嗎？",
+"用餐後常常會想立刻找洗手間嗎？",
+"可以接受人潮比較擁擠的地方嗎？",
+"每走完一個景點，你會需要休息或坐下來嗎？",
+"願意幫忙查看導航、交通路線或轉乘方式嗎？",
+"可以接受單段步行約 15 分鐘嗎？",
+"有沒有不敢吃、不喜歡吃，或需要避開的食物？"
+]],
+["03","相處習慣與溝通",[
+"如果累了，你可能會變得比較安靜、煩躁或不太想說話嗎？",
+"消費時可以接受由其中一人先付款，再統一分帳嗎？",
+"有暈車、暈船或容易因交通工具不舒服的情況嗎？",
+"可以接受再次造訪以前去過的景點嗎？",
+"飯店如果有附早餐，你會覺得一定要吃到嗎？",
+"願意主動點餐，或嘗試用當地語言與店家溝通嗎？"
+]],
+["04","彈性、預算與行李",[
+"走路速度通常比較慢，或習慣邊走邊逛嗎？",
+"有沒有明確不想去、會感到不舒服，或希望避開的地方？",
+"出門前通常至少需要 15 分鐘準備時間嗎？",
+"如果最後沒能去到原本很想去的景點，你會很失望或生氣嗎？",
+"有需要特別購買的伴手禮，或一定想安排的購物行程嗎？",
+"可以接受晚上約 9 點前後回到飯店嗎？",
+"可以接受買回飯店後在房間內吃東西嗎？",
+"如果行李重量與空間允許，可以接受旅伴借用一些行李空間嗎？"
+]]
+];
+const root=document.getElementById("questions");let qnum=0;
+groups.forEach(g=>{let sec=document.createElement("section");sec.className="section";sec.innerHTML=`<div class="section-head"><span class="section-no">${g[0]}</span><h2>${g[1]}</h2></div>`;g[2].forEach(q=>{qnum++;let card=document.createElement("div");card.className="qcard";card.innerHTML=`<div class="qtop"><span class="num">${String(qnum).padStart(2,"0")}.</span><div class="question">${q}</div></div><div class="choices">${[["yes","O／可以"],["no","X／不太行"],["maybe","看情況"]].map(([v,t])=>`<label class="choice"><input type="radio" name="q${qnum}" value="${v}" onchange="saveAndProgress()"><span>${t}</span></label>`).join("")}</div><div class="note"><input id="note${qnum}" placeholder="補充說明（選填）" oninput="saveDraft()"></div>`;sec.appendChild(card)});root.appendChild(sec)});
+function answered(){return Array.from({length:32},(_,i)=>document.querySelector(`input[name="q${i+1}"]:checked`)).filter(Boolean).length}
+function saveAndProgress(){saveDraft();progress()}
+function progress(){let n=answered();document.getElementById("progressText").textContent=`已回答 ${n} / 32 題`;document.getElementById("progressFill").style.width=(n/32*100)+"%"}
+function collect(){let data={旅行名稱:tripName.value,目的地:destination.value,旅行日期:dates.value,填寫者:traveler.value,回答:[],期待:hope.value,其他提醒:extra.value,溝通方式:communication.value};let idx=0;groups.forEach(g=>g[2].forEach(q=>{idx++;let a=document.querySelector(`input[name="q${idx}"]:checked`);data.回答.push({題號:idx,分類:g[1],問題:q,回答:a?({yes:"O／可以",no:"X／不太行",maybe:"看情況"}[a.value]):"尚未回答",補充:document.getElementById("note"+idx).value})}));return data}
+function saveDraft(){try{localStorage.setItem("travelSurveyDraft",JSON.stringify(collect()))}catch(e){}}
+function restore(){try{let d=JSON.parse(localStorage.getItem("travelSurveyDraft"));if(!d)return;tripName.value=d.旅行名稱||"";destination.value=d.目的地||"";dates.value=d.旅行日期||"";traveler.value=d.填寫者||"";hope.value=d.期待||"";extra.value=d.其他提醒||"";communication.value=d.溝通方式||"";(d.回答||[]).forEach(a=>{let val={"O／可以":"yes","X／不太行":"no","看情況":"maybe"}[a.回答];if(val){let el=document.querySelector(`input[name="q${a.題號}"][value="${val}"]`);if(el)el.checked=true}let note=document.getElementById("note"+a.題號);if(note)note.value=a.補充||""})}catch(e){}progress()}
+function makeSummary(){let d=collect(),counts={yes:0,no:0,maybe:0};d.回答.forEach(a=>{let v={"O／可以":"yes","X／不太行":"no","看情況":"maybe"}[a.回答];if(v)counts[v]++});yesCount.textContent=counts.yes;noCount.textContent=counts.no;maybeCount.textContent=counts.maybe;let lines=[`旅行：${d.旅行名稱||"未填"}｜${d.目的地||"未填"}｜${d.旅行日期||"未填"}`,`填寫者：${d.填寫者||"未填"}`,"","【題目回答】",...d.回答.map(a=>`${a.題號}. ${a.問題}\n   ${a.回答}${a.補充?"｜補充："+a.補充:""}`),"",`【最期待的事】${d.期待||"未填"}`,`【其他提醒】${d.其他提醒||"未填"}`,`【希望的溝通方式】${d.溝通方式||"未填"}`];summaryText.textContent=lines.join("\n");summary.classList.add("show");summary.scrollIntoView({behavior:"smooth"});saveDraft()}
+function copySummary(){let t=summaryText.textContent;navigator.clipboard?.writeText(t).then(()=>alert("已複製摘要！")).catch(()=>alert("目前瀏覽器無法自動複製，請長按摘要文字複製。"))}
+function downloadData(){let blob=new Blob([JSON.stringify(collect(),null,2)],{type:"application/json;charset=utf-8"});let a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="旅伴事前調查回答.json";a.click();URL.revokeObjectURL(a.href)}
+function clearAll(){if(!confirm("確定要清除目前所有回答並重新填寫嗎？"))return;localStorage.removeItem("travelSurveyDraft");document.querySelectorAll("input,textarea").forEach(e=>{if(e.type==="radio")e.checked=false;else e.value=""});summary.classList.remove("show");progress()}
+restore();document.querySelectorAll("#tripName,#destination,#dates,#traveler,#hope,#extra,#communication").forEach(e=>e.addEventListener("input",saveDraft));
+</script>
+</body></html>
